@@ -10,7 +10,7 @@ import java.time.LocalTime;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Shift {
+public class OpeningHours {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,7 +27,7 @@ public class Shift {
     // Many-to-One relationship with Veterinarian
     @ManyToOne
     @JoinColumn(name = "veterinarian_id", nullable = false)
-    private Veterinarian veterinarian;
+    private VeterinaryClinic veterinaryClinic;
 
     // Method to check if a vet is currently on duty for the given day and time
     public boolean isOnDuty(LocalTime currentTime, Weekday currentWeekday) {

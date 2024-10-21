@@ -10,7 +10,7 @@ import lombok.*;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-public class Veterinarian {
+public class VeterinaryClinic {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         @Column(name = "id", nullable = false)
@@ -26,4 +26,8 @@ public class Veterinarian {
         private String email;
 
         private String address;
+
+        private String city;
+
+        private int zipCode;
 }

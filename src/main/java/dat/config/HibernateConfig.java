@@ -1,6 +1,6 @@
 package dat.config;
 
-import dat.entities.Veterinarian;
+import dat.entities.VeterinaryClinic;
 import jakarta.persistence.EntityManagerFactory;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -38,7 +38,7 @@ public class HibernateConfig {
     }
     // TODO: IMPORTANT: Add Entity classes here for them to be registered with Hibernate
     private static void getAnnotationConfiguration(Configuration configuration) {
-        configuration.addAnnotatedClass(Veterinarian.class);
+        configuration.addAnnotatedClass(VeterinaryClinic.class);
 
     }
 

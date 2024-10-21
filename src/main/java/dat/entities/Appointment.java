@@ -25,7 +25,7 @@ public class Appointment {
 
     @ManyToOne
     @JoinColumn(name = "veterinarian_id", nullable = false)  // Foreign key to the Veterinarian table
-    private Veterinarian veterinarian;  // Veterinarian assigned to the appointment
+    private VeterinaryClinic veterinaryClinic;  // Veterinarian assigned to the appointment
 
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)  // Foreign key to the Person table
